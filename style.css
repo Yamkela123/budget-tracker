@@ -1,0 +1,303 @@
+/* ===== GENERAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #333;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===== PASSWORD SCREEN ===== */
+#password-screen {
+  max-width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #0000001a;
+}
+
+#password-screen input {
+  width: 80%;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+#password-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#password-msg {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.app-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  color: inherit;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+#dark-mode-toggle {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== BALANCE CARD ===== */
+.balance-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #0000001a;
+  margin-bottom: 25px;
+}
+
+.balance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-header h2 {
+  font-size: 20px;
+}
+
+.balance-header h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.summary-item {
+  width: 48%;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px #00000010;
+}
+
+.summary-item label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.money {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.plus {
+  color: #16a34a;
+}
+
+.minus {
+  color: #dc2626;
+}
+
+/* ===== ADD TRANSACTION ===== */
+.add-transaction {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #0000001a;
+  margin-bottom: 25px;
+}
+
+.add-transaction h2 {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3b82f6;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#add-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+#add-btn:hover {
+  background: #1d4ed8;
+}
+
+#clear-btn {
+  background: #e5e7eb;
+  color: #333;
+}
+
+#clear-btn:hover {
+  background: #d1d5db;
+}
+
+/* ===== HISTORY LIST ===== */
+.history {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #0000001a;
+  margin-bottom: 25px;
+}
+
+.transactions-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.transactions-list li {
+  background: #f9fafb;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: none;           /* remove long strip */
+}
+
+.transactions-list li span {
+  font-weight: bold;
+  margin-left: 10px;           /* space between description and amount */
+}
+
+/* delete button */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 4px 6px;            /* small button */
+  border-radius: 3px;
+  font-size: 10px;
+  cursor: pointer;
+  display: inline-block;       /* prevent stretching */
+  width: auto;                 /* fit content */
+  text-align: center;
+  margin-left: 8px;            /* space from amount */
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* Export button */
+#export-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #10b981;
+  color: white;
+}
+
+#export-btn:hover {
+  background: #059669;
+}
+
+/* ===== FOOTER ===== */
+.app-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode .balance-card,
+body.dark-mode .add-transaction,
+body.dark-mode .history,
+body.dark-mode #password-screen {
+  background: #374151;
+  color: #f3f4f6;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="number"] {
+  background: #4b5563;
+  color: #f3f4f6;
+  border: 1px solid #9ca3af;
+}
+
+body.dark-mode .form-actions button,
+body.dark-mode #dark-mode-toggle,
+body.dark-mode #export-btn {
+  color: white;
+}
